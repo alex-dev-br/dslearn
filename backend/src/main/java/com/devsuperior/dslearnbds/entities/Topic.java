@@ -10,7 +10,6 @@ import java.util.Set;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
-import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
@@ -56,7 +55,7 @@ public class Topic implements Serializable{
 	private Set<User> likes = new HashSet<>();
 	
 	@ManyToOne
-	@JoinColumn(name = "tb_reply")
+	@JoinColumn(name = "reply_id")
 	private Reply answer;
 	
 	@OneToMany(mappedBy = "topic")
