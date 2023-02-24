@@ -100,7 +100,7 @@ public class Offer implements Serializable{
 
 	public List<Topic> getTopics() {
 		return topics;
-	}
+	}	
 
 	@Override
 	public int hashCode() {
